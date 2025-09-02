@@ -1,0 +1,77 @@
+# Redeemer Write-up
+**Prepared by:** dotguy  
+
+---
+
+## Overview
+This write-up focuses on the HTB Redeemer machine, which teaches how to interact with a **Redis server** and retrieve data securely.  
+The emphasis is on understanding **in-memory databases**, enumeration, and basic Redis commands while developing fundamental penetration testing skills.
+
+---
+
+## Key Learnings
+
+### 1. Understanding Databases and Redis
+- Learned what databases are and their importance in real-world environments.  
+- Redis is an **in-memory key-value database**:
+  - Stores data in RAM for **fast retrieval**.  
+  - Often used for **caching frequently requested data**.  
+  - Can persist data to disk for backup.  
+- Redis helps improve **application performance** by reducing load on traditional databases.
+
+---
+
+### 2. Setting Up Connectivity
+- Verified connectivity to the target machine using `ping`.  
+- Conducted a preliminary scan with **Nmap** to identify open ports and running services:
+```bash
+nmap -sV {TARGET_IP}
+Found port 6379 (Redis) open, which became the main entry point.
+
+3. Using Redis CLI
+Installed redis-cli to interact with the Redis server:
+
+bash
+Copy code
+sudo apt install redis-tools
+redis-cli -h {TARGET_IP}
+Learned the importance of CLI tools for server interaction.
+
+Explored basic Redis commands:
+
+info → Retrieve server statistics
+
+select <db> → Switch between logical databases
+
+keys * → List all keys in the database
+
+get <key> → Retrieve the value of a key
+
+4. Enumeration and Key Retrieval
+Learned how to enumerate a Redis database:
+
+Identify databases (keyspaces) and number of keys.
+
+Explore keys and retrieve stored values.
+
+Understood how careful exploration can reveal critical information (like flags in HTB machines).
+
+5. Key Takeaways
+Understanding the underlying technology before exploitation is critical.
+
+Learned how enumeration, scanning, and CLI tools work together in penetration testing.
+
+Gained experience in methodical exploration to locate sensitive data.
+
+Reinforced that research, observation, and structured methodology are more important than speed.
+
+Conclusion
+The Redeemer machine strengthened foundational skills in:
+
+Database enumeration
+
+Command-line interaction
+
+In-memory database concepts
+
+It emphasized the value of structured exploration, careful observation, and technology-specific tool usage in cybersecurity.
