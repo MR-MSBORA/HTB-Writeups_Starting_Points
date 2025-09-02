@@ -22,7 +22,7 @@ HTB-Beginner-Writeups/
 │   ├── Machine-01.md
 │   └── ...
 └── Scripts/
-
+```
 ---
 
 ## Machines
