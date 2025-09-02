@@ -11,6 +11,7 @@ The goal of this repository is to:
 - Showcase structured approaches to HTB machines.
 - Highlight the tools, techniques, and methodologies used.
 - Track my progress in cybersecurity fundamentals as an aspiring Security Analyst.
+- ![Image](https://github.com/user-attachments/assets/8a6c7ab8-9bb4-43f9-820c-83745670ef4c)
 
 ---
 
