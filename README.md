@@ -15,13 +15,13 @@ The goal of this repository is to:
 ---
 
 ## Repository Structure
+```text
 HTB-Beginner-Writeups/
-├── README.md # This introduction
-├── Machines/ # Individual write-ups for each machine
-│ ├── Machine-01.md
-│ ├── Machine-02.md
-│ └── ...
-└── Scripts/ # Optional scripts or automation created during labs
+├── README.md
+├── Machines/
+│   ├── Machine-01.md
+│   └── ...
+└── Scripts/
 
 ---
 
