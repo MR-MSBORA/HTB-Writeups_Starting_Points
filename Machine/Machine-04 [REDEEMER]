@@ -49,12 +49,15 @@ get <key> → Retrieve the value of a key
 
 4. Enumeration and Key Retrieval
 Learned how to enumerate a Redis database:
+ -Identify databases (keyspaces) and number of keys.
 
-Identify databases (keyspaces) and number of keys.
+ -Explore keys and retrieve stored values.
 
-Explore keys and retrieve stored values.
+ -Understood how careful exploration can reveal critical information (like flags in HTB machines).
 
-Understood how careful exploration can reveal critical information (like flags in HTB machines).
+
+
+
 
 5. Key Takeaways
 Understanding the underlying technology before exploitation is critical.
