@@ -1,0 +1,74 @@
+# Meow Write-up
+**Prepared by:** 0ne-nine9  
+
+---
+
+## Overview
+This write-up highlights the practical skills and lessons learned from the Hack The Box (HTB) Meow machine.  
+The focus is on **learning fundamental penetration testing concepts**, understanding tools, and building problem-solving skills.
+
+---
+
+## Key Learnings
+
+### 1. Setting Up and Connectivity
+- Connected to HTB labs using **Pwnbox**, a browser-based virtual machine preconfigured for hacking challenges.  
+- Learned to use **OpenVPN** to connect from a personal virtual machine:
+  - Download the VPN configuration file from HTB.  
+  - Connect using a terminal or VPN client.  
+  - Verify connectivity by pinging the target machine:
+    ```bash
+    ping {TARGET_IP}
+    ```
+- Developed the skill of **checking network connectivity** and ensuring the lab environment is stable before starting.
+
+---
+
+### 2. Enumeration Skills
+- Learned the importance of **enumeration**: discovering open ports and running services.  
+- Practiced **port scanning** with **Nmap** to identify services:
+    ```bash
+    nmap -sV {TARGET_IP}
+    ```
+- Learned how different services (Telnet, web servers, file shares) can be **entry points**.  
+- Understood that **documentation during enumeration** is critical to avoid missing attack vectors.
+
+---
+
+### 3. Understanding Vulnerabilities
+- Explored **Telnet**, an older remote management protocol, to understand its security weaknesses.  
+- Learned the concept of **default usernames and blank passwords** as potential footholds.  
+- Understood that vulnerabilities often arise from **misconfigurations or outdated services**.
+
+---
+
+### 4. Exploitation and Foothold
+- Practiced **gaining initial access** by testing common usernames with blank passwords.  
+- Learned the importance of **persistence and methodical testing**, even when initial attempts fail.  
+- Developed the skill of exploring directories to locate **sensitive files**, like the flag.
+
+---
+
+### 5. Capturing Flags and Verification
+- Learned how to locate target files (e.g., `flag.txt`) and extract contents:
+    ```bash
+    cat flag.txt
+    ```
+- Understood that flags in HTB serve as **proof of success** and encourage structured problem-solving.  
+- Realized that completing a machine involves **research, critical thinking, and systematic methodology**, not just memorizing commands.
+
+---
+
+## Takeaways
+- Penetration testing is mostly about **research, observation, and careful methodology**.  
+- Each step—setup, enumeration, foothold, and verification—builds **practical problem-solving skills**.  
+- Beginner machines like Meow build confidence and foundational skills for:
+  - Web exploitation  
+  - Privilege escalation  
+  - Automation and scripting  
+  - Security assessment in real-world scenarios
+
+---
+
+**Conclusion:**  
+The Meow machine reinforced **fundamental penetration testing concepts**, including lab setup, connectivity, enumeration, vulnerability assessment, foothold acquisition, and flag capture. It emphasized **persistence, research, and structured methodology** in cybersecurity.
